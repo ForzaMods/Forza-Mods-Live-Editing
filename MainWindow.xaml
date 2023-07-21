@@ -1,0 +1,56 @@
+﻿<Window x:Class="ForzaMods_LiveEditing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForzaMods_LiveEditing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="450"
+        ResizeMode="NoResize" Background="White" Closing="Window_Closing">
+
+    <Grid>
+        <TextBox x:Name="Scan_For_Aob_Box"
+                 Height="35" Width="300"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Margin="15" IsEnabled="False"/>
+
+        <TextBox x:Name="Replace_Box"
+                 Height="35" Width="300"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Margin="15,75,0,0" IsEnabled="False"/>
+
+        <Button x:Name="Scan_For_Aob_Button"
+                Height="35" Width="80"
+                Content="Scan"
+                VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="15"
+                Click="Scan_For_Aob_Button_OnClick" IsEnabled="False"/>
+
+        <Button x:Name="Replace_Button"
+                Height="35" Width="80"
+                Content="Replace"
+                VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="0,75,15,0"
+                Click="Replace_Button_OnClick" IsEnabled="False"/>
+
+        <Label x:Name="Status"
+               Content="Status: Doing nothing"
+               VerticalAlignment="Bottom" HorizontalAlignment="Left"
+               Margin="10" Foreground="Black"/>
+
+        <Button x:Name="Revert_Button"
+                Height="35" Width="80"
+                Content="Revert"
+                VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="0,122,15,0"
+                Click="Revert_Button_OnClick" IsEnabled="False"/>
+        <Button x:Name="Guide_Button"
+                Height="35" Width="80"
+                Content="Guide"
+                VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="0,122,135,0"
+                Click="Guide_Button_Click" IsEnabled="True"/>
+    </Grid>
+</Window>
