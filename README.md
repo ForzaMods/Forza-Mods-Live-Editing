@@ -6,7 +6,7 @@ the only error checking is if the bytes in the first and second textbox match
 
 have fun 
 
-**download: **
+** download: https://github.com/ForzaMods/Forza-Mods-Live-Editing/releases/latest **
 
 attaching the shit gui preview:
 
